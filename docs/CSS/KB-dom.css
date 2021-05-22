@@ -89,7 +89,7 @@ main {
 }
 
 .obrázek {
-    background-image: url("../Pict/úvod.png");
+    background-image: url("Pict/úvod.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
