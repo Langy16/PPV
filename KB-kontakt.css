@@ -1,0 +1,226 @@
+body {
+    height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: rgba(127, 127, 127);
+    color: rgb(129, 116, 116);
+}
+
+header {
+    align-items: center;
+    height: 7%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.fa-align-justify {
+    font-size: 2em;
+    position: absolute;
+    top: 16px;
+    left: 10px;
+}
+
+nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jméno {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.jméno span {
+    color: goldenrod;
+}
+
+.záložky {
+    align-items: center;
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+
+    font-size: 1em;
+    font-weight: bold;
+}
+
+a {
+    color: rgb(129, 116, 116);
+    text-decoration: none;
+}
+
+.p {
+    display: flex;
+    flex-direction: row;
+}
+
+.záložky i {
+    font-size: 2em;
+}
+
+.záložky :nth-child(2n) {
+    color: rgba(4, 4, 255, 0.75)
+}
+
+nav i {
+    font-size: 1.5em;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 3%;
+}
+
+footer div {
+    width: 80%;
+}
+
+.vysouvací {
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    height: 90%;
+    width: 0%;
+    border-right: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    box-shadow: none;
+    background-color: rgb(51,51,51);
+    transition: 0.25s;
+    overflow: hidden;
+    top: 65px;
+}
+
+.vysouvací a {
+    padding: 10px;
+    font-size: 20px;
+}
+main {
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 90%;
+}
+
+.obsah {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.koment-text {
+    border-left: black 2px solid;
+    width: 40%;
+}
+
+.info {
+    background-color: rgb(51, 51, 51);
+    width: 600px;
+    border: solid black 2px;
+    color: rgb(129, 116, 116);
+    border-radius: 50px;
+    height: 500px;
+    font-size: 1.25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info div {
+    padding: 30px;
+}
+
+.podinfo p:last-child {
+    padding-top: 20px;
+}
+
+.udaje p:first-child {
+    font-size: 1.75em;
+    text-decoration: underline;
+    padding-bottom: 5px;
+}
+
+.Form {
+    display: flex;
+    flex-direction: column;
+}
+
+.Form input {
+    outline: none;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: rgb(127, 127, 127);
+    border-radius: 10px;
+    border: 2px black solid;
+    color: black;
+    width: 30%;
+}
+
+textarea{
+    width: 80%;
+    resize: none;
+    margin-top: 10px;
+    background-color: rgb(127, 127, 127);
+    outline: none;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px black solid;
+    color: black
+}
+::placeholder {
+    color: black;
+    opacity: 1;
+}
+@media(max-width: 1440px){
+    .fa-align-justify{
+        top: 12px;
+    }
+}
+@media(max-width: 425px) {
+    header{
+        justify-content:flex-end;
+    }
+    nav{
+        width: 90%;
+    }
+    .vysouvací a{
+        font-size: 40px;
+    }
+    .jméno{
+        font-size: 1em;
+    }
+    .záložky i{
+        font-size: 1.25em;
+    }
+    .záložky a{
+        font-size: 1em;
+    }
+    .záložky{
+        width: 125px;
+    }
+    .fa-align-justify{
+        top: 18px;
+        font-size: 1.25em;
+    }
+    .info{
+        width: 90%;
+    }
+    .info div{
+        font-size: 0.75em;
+    }
+    .info input{
+        width: 50%;
+    }
+    .info textarea{
+        width: 90%;
+    }
+}

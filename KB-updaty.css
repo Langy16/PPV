@@ -1,0 +1,268 @@
+body {
+    height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: rgba(127, 127, 127);
+    color: rgb(129, 116, 116);
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    align-items: center;
+    height: 7%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.fa-align-justify {
+    font-size: 2em;
+    position: absolute;
+    top: 16px;
+    left: 10px;
+}
+
+nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jméno {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.jméno span {
+    color: goldenrod;
+}
+
+
+.záložky {
+    align-items: center;
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+
+    font-size: 1em;
+    font-weight: bold;
+}
+
+a {
+    color: rgb(129, 116, 116);
+    text-decoration: none;
+}
+
+.p {
+    display: flex;
+    flex-direction: row;
+}
+
+.záložky i {
+    font-size: 2em;
+}
+
+.záložky :nth-child(2n) {
+    color: rgba(4, 4, 255, 0.75)
+}
+
+nav i {
+    font-size: 1.5em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 90%;
+    color: black;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 3%;
+}
+
+footer div {
+    width: 80%;
+}
+
+.vysouvací {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 0%;
+    border-right: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    box-shadow: none;
+    background-color: rgb(51, 51, 51);
+    transition: 0.25s;
+    overflow: hidden;
+    top: 65px;;
+}
+
+.vysouvací a {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.seznam {
+    height: 100%;
+    width: 20%;
+    display: flex;
+}
+
+.zobraz {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    border-radius: 50px;
+    border: solid 10px rgb(32, 32, 32);
+    background-color: black;
+    height: 90%;
+}
+
+ol {
+    width: 40%;
+    border: 3px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    padding-left: 40px;
+    font-size: 1.25em;
+    list-style: square;
+    height:fit-content;
+
+    border-radius: 10px;
+}
+
+li {
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.popis {
+    cursor: text;
+    color: rgba(127, 127, 127);
+    font-size: 1.5em;
+    width: 90%;
+    text-align: center;
+}
+
+h1 {
+    padding-top: 20px;
+    font-size: 3em;
+    color: goldenrod;
+}
+
+.datum {
+    font-size: 2em;
+    color: rgba(127, 127, 127);
+    padding-bottom: 20px;
+}
+
+@media(max-width: 1440px) {
+    .fa-align-justify {
+        top: 12px;
+    }
+    .vysouvací{
+        top: 58px;
+    }
+}
+
+@media(max-width: 1024px) {
+    ol {
+        padding-left: 25px;
+        width: 60%;
+    }
+}
+
+@media(max-width: 768px) {
+    .seznam {
+        width: 20%;
+    }
+
+    .zobraz {
+        width: 70%;
+    }
+
+    ol {
+        font-size: 1em;
+    }
+}
+
+@media(max-width: 425px) {
+    header {
+        justify-content: flex-end;
+    }
+
+    .fa-align-justify {
+        top: 15px;
+        font-size: 1.5em;
+    }
+
+    .vysouvací a {
+        font-size: 40px;
+    }
+
+    nav {
+        width: 90%;
+    }
+
+    main {
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    ol {
+        width: 25%;
+        overflow-y: scroll;
+        height: 100%;
+        margin-top: 0px;
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 5px;
+    }
+
+    .seznam {
+        width: 90%;
+        height: 20%;
+    }
+
+    .zobraz {
+        height: 70%;
+        width: 90%;
+    }
+
+    .jméno {
+        font-size: 1em;
+    }
+
+    .záložky {
+        width: 125px;
+    }
+
+    .záložky i {
+        font-size: 1.5em;
+    }
+}
+@media(max-width: 375px) {
+    ol{
+        width: 30%;
+    } 
+    h1{
+        font-size: 2em;
+    }
+}
