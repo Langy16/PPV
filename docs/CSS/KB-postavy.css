@@ -145,35 +145,35 @@ article{
     margin-bottom: 80px;
 }
 .obrázek{
-    background-image: url("Pict/Regala.png");
+    background-image: url("../Pict/Regala.png");
     border: 2px solid black;
     border-radius: 20px;
 }
 .obrázek2{
-    background-image: url("Pict/Langa.png");
+    background-image: url("../Pict/Langa.png");
 }
 .obrázek3{
-    background-image: url("Pict/Varan.png");
+    background-image: url("../Pict/Varan.png");
     border: 2px solid black;
     border-radius: 20px;
 }
 .obrázek4{
-    background-image: url("Pict/placeholder.png");
+    background-image: url("../Pict/placeholder.png");
 }
 .obrázek5{
-    background-image: url("Pict/Štele.png");
+    background-image: url("../Pict/Štele.png");
 }
 .obrázek6{
-    background-image: url("Pict/Ožonis.png");
+    background-image: url("../Pict/Ožonis.png");
 }
 .obrázek7{
-    background-image: url("Pict/GenerálXXX.png");
+    background-image: url("../Pict/GenerálXXX.png");
 }
 .obrázek8{
-    background-image: url("Pict/placeholder.png");
+    background-image: url("../Pict/placeholder.png");
 }
 .obrázek9{
-    background-image: url("Pict/Weed.png");
+    background-image: url("../Pict/Weed.png");
 }
 .obr{
     background-position: center center;
