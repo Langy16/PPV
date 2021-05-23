@@ -1,0 +1,253 @@
+body {
+    height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(129, 116, 116);
+    transition: 0.5s;
+}
+
+header {
+    height: 7%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.fa-align-justify {
+    font-size: 2em;
+}
+
+nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jméno {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.jméno span {
+    color: goldenrod;
+}
+
+.záložky {
+    align-items: center;
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+
+    font-size: 1em;
+    font-weight: bold;
+}
+
+a {
+    color: rgb(129, 116, 116);
+    text-decoration: none;
+}
+
+.p {
+    display: flex;
+    flex-direction: row;
+}
+
+.záložky i {
+    font-size: 2em;
+}
+
+.záložky :nth-child(2) {
+    color: rgba(4, 4, 255, 0.75)
+}
+
+nav i {
+    font-size: 1.5em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    height: 90%;
+}
+
+.obsah {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.art-obrázek {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.obrázek {
+    background-image: url("../Pict/úvod.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.popis {
+    display: flex;
+    justify-content: center;
+}
+
+.popis div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgba(4, 4, 255, 0.75);
+    box-shadow: 0 0 10px 5px rgba(4, 4, 255, 0.75);
+    border-radius: 30px;
+    width: 50%;
+    height: 200px;
+}
+
+.popis div p {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+.zajímavosti {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding-bottom: 40px;
+    width: 1000px;
+}
+
+.zajímavosti div {
+    background-color: rgb(0, 0, 0);
+    width: 30%;
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zajímavosti div p {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 3%;
+}
+
+footer div {
+    width: 80%;
+}
+
+.vysouvací {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 0%;
+    background-color: rgb(51,51,51);
+    transition: 0.25s;
+    overflow-x: hidden;
+}
+
+.vysouvací a {
+    padding: 10px;
+    font-size: 20px;
+}
+@media(max-width: 1440px) {
+    .popis div{
+        width: 80%;
+    }
+}
+@media(max-width: 768px) {
+    .zajímavosti{
+        width: 750px;
+    }
+    .zajímavosti div{
+        font-size: 0.9em;
+        line-height: 20px;
+    }
+    .jméno{
+        font-size: 1.25em;
+    }
+}
+@media(max-width: 425px) {
+    body{
+        height: 120vh;
+    }
+    .zajímavosti{
+        flex-direction: column;
+        justify-content: space-between;
+        width: 90%;
+        padding-bottom: 0px;
+        height: 40%;
+    }
+    .zajímavosti div{
+        font-size: 0.9em;
+        line-height: 20px;
+        width: 100%;
+    }
+    .jméno{
+        font-size: 1em;
+    }
+    .záložky i{
+        font-size: 1.5em;
+    }
+    .záložky a{
+        font-size: 1em;
+    }
+    .záložky {
+        width: 150px;
+    }
+    .fa-align-justify{
+       padding-right: 10px;
+        font-size: 1.5em;
+    }
+    header{
+        justify-content:flex-end;
+    }
+    nav{
+        width: 90%;
+    }
+    .obsah{
+        width: 95%;
+        justify-content: space-evenly;
+    }
+    .popis div{
+        width: 100%;
+        height: 150px;
+        font-size: 0.75em;
+    }
+    .art-obrázek{
+        margin-top: 0px;
+    }
+    .vysouvací{
+        height: 108%;
+    }
+    .vysouvací a{
+        font-size: 40px;
+    }
+   
+} 
+@media(max-width: 375px) {
+        .jméno{
+            font-size: 0.9em;
+        }
+}
