@@ -519,6 +519,8 @@ main {
 @media(max-width: 425px) {
         .mapa{
             transform: rotate(90deg);
+            padding-bottom: 0px;
+            margin-bottom: 55px;
         }
         header{
             justify-content: flex-end;
