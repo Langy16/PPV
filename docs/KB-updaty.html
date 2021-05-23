@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://api.cajthaml.eu/upload/reset_595b8cd7ad.css">
+    <link rel="stylesheet" href="../CSS/KB-updaty.css">
+    <link rel="stylesheet" href="../CSS/KB-Barva.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="icon" href="../Pict/PPV.ico" sizes="16x16" type="image/png">
+    <title>PPV</title>
+</head>
+
+<body onload="LoadRan()">
+    <header>
+        <i class="fas fa-align-justify" id="vyslišta"></i>
+        <nav>
+            <div class="jméno">
+                <p>PPV <span id="jméno">Projekt Partička Volové</span></p>
+            </div>
+            <div class="p">
+                <div class="záložky">
+                    <a href="index.html">domů</a>
+                    <i class="fas fa-moon" id="dark"></i>
+                    <i class="fas fa-sun" id="light"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="vysouvací" id="vysouvací">
+        <a href="index.html">Domů</a>
+        <a href="KB-postavy.html">Postavy</a>
+        <a href="KB-objekty.html">Objekty</a>
+        <a href="KB-mise.html">Mise</a>
+        <a href="KB-mapa.html">Mapa</a>
+        <a href="KB-updaty.html">Updaty</a>
+        <a href="KB-kontakt.html">Kontakt</a>
+    </div>
+    <main>
+        <article class="seznam">
+            <ol id="seznam">
+                <li id="li1" onclick="CLICK(this)">
+                    Update 1.0
+                </li>
+                <li id="li2" onclick="CLICK(this)">
+                    Update 1.1
+                </li>
+                <li id="li3" onclick="CLICK(this)">
+                    Update 1.2
+                </li>
+                <li id="li4" onclick="CLICK(this)">
+                    Update 1.3
+                </li>
+                <li id="li5" onclick="CLICK(this)">
+                    Demo 1.
+                </li>
+            </ol>
+        </article>
+        <article class="zobraz" id="zobraz">
+            <h1 id="nazev">Název</h1>
+            <div class="popis" id="popis"></div>
+            <p class="datum" id="datum">Datum</p>
+        </article>
+    </main>
+    <footer>
+        <div>
+            <p>Ondřej Langšádl © 2021</p>
+        </div>
+    </footer>
+    <script src="../JS/KB-updaty.js"></script>
+</body>
+
+</html>
