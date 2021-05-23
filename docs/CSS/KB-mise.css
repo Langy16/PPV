@@ -1,0 +1,272 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(129, 116, 116);
+    transition: 0.5s;
+}
+
+header {
+    align-items: center;
+    height: 7%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: space-evenly;
+}
+
+.fa-align-justify {
+    font-size: 2em;
+}
+
+nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jméno {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.jméno span {
+    color: goldenrod;
+}
+
+.vyhledávač {
+    position: relative;
+}
+
+.vyhledávač input {
+    height: 30px;
+    width: 250px;
+    background-color: rgba(128, 128, 128, 0.25);
+    border-radius: 5px;
+    outline: none;
+}
+
+.vyhledávač i {
+    font-size: 1em;
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.záložky {
+    align-items: center;
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+
+    font-size: 1em;
+    font-weight: bold;
+}
+
+a {
+    color: rgb(129, 116, 116);
+    text-decoration: none;
+}
+
+.p {
+    display: flex;
+    flex-direction: row;
+}
+
+.záložky i {
+    font-size: 2em;
+}
+
+.záložky :nth-child(2n) {
+    color: rgba(4, 4, 255, 0.75)
+}
+
+nav i {
+    font-size: 1.5em;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 3%;
+}
+
+footer div {
+    width: 80%;
+}
+
+.vysouvací {
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    height: 90%;
+    width: 0%;
+    background-color: rgb(51,51,51);
+    transition: 0.25s;
+    overflow: hidden;
+    left: 0;
+}
+
+.vysouvací a {
+    padding: 10px;
+    font-size: 20px;
+}
+main{
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+}
+.obsah{
+    height: fit-content;
+    padding-top: 10px;
+    width: 75%;
+    color: rgb(129, 116, 116);
+    padding-bottom: 10px;
+}
+.Mise{
+    height: 215px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: black solid 5px;
+    width: 100%;
+}
+.Mise div{
+    text-align: center;
+    padding: 2px;
+    background-color: rgb(51,51,51);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24%;
+    height: 200px;
+    border-radius: 20px;
+}
+.konečný{
+    border-bottom: none;
+}
+@media(max-width: 1440px) {
+    .vysouvací a{
+        font-size: 20px;
+    }
+    .obsah{
+        width: 85%;
+    }
+}
+@media(max-width: 1024px) {
+    .obsah{
+        width: 90%;
+    }
+    nav{
+        width: 90%;
+    }
+    .Mise div{
+        height: 175px;
+    }
+    .Mise{
+        height: 190px;
+    }
+}
+@media(max-width: 768px) {
+    .obsah{
+        width: 90%;
+    }
+    header{
+        justify-content: flex-end;
+    }
+    nav{
+        width: 90%;
+        padding-right: 20px;
+    }
+    .Mise div{
+        height: 150px;
+    }
+    .Mise{
+        height: 165px;
+    }
+    .vyhledávač input{
+        width: 150px;
+    }
+    .záložky{
+        width: 150px;
+    }
+    .jméno{
+        font-size: 1.25em;
+    }
+    .fa-align-justify{
+        padding-right: 10px;
+    }
+}
+@media(max-width: 425px) {
+    .vysouvací a{
+        font-size: 40px;
+    }
+    .obsah{
+        width: 95%;
+    }
+    header{
+        justify-content: flex-end;
+    }
+    nav{
+        width: 90%;
+        padding-right: 10px;
+    }
+    .Mise div{
+        height: 150px;
+        font-size: 0.8em;
+        width: 25%;
+        border-radius: 0px;
+    }
+    .Mise{
+        height: 165px;
+    }
+    .vyhledávač input{
+        width: 80px;
+    }
+    .záložky{
+        width: 125px;
+    }
+    .záložky i{
+        font-size: 1.25em;
+    }
+    .záložky a{
+        font-size: 0.8em;
+    }
+    .jméno{
+        font-size: 0.8em;
+    }
+    .fa-align-justify{
+        padding-right: 5px;
+        font-size: 1.25em;
+    }
+    .Mise div:last-child{
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .Mise div:first-child{
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+}
+@media(max-width: 425px) {
+    .záložky{
+        width: 90px;
+    }
+    .Mise div{
+        width: 22%;
+    }
+    .Mise div:last-child{
+        width: 34%;
+    }
+}
